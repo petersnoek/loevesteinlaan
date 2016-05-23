@@ -329,8 +329,12 @@ class ClientView implements Renderable
      */
     protected function getDataFromDocument($document)
     {
-        $data[] = $document->data;
+        $data[] = array();
 
+        if (isset($document->data)) {
+            $data[] = $document->data;
+        }
+        
         if (isset($document->included)) {
             $data = array_merge($data, $document->included);
         }

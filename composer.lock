@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc68977a9b8094c6bfb1e193d948a7ec",
-    "content-hash": "e6a06883268aa19e14a3e6630c8906e6",
+    "hash": "00628b16e0c5bc5c655369f0a156d6d7",
+    "content-hash": "21848c8c9f106b828b2c21d8596d805d",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -3577,6 +3577,67 @@
             "time": "2016-02-22 15:43:51"
         },
         {
+            "name": "rodymol123/flarum-ext-dutch",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rodymol123/flarum-ext-dutch.git",
+                "reference": "cbaee16d2bcd2502326ef67214992addf2c2d066"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rodymol123/flarum-ext-dutch/zipball/cbaee16d2bcd2502326ef67214992addf2c2d066",
+                "reference": "cbaee16d2bcd2502326ef67214992addf2c2d066",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.4"
+            },
+            "suggest": {
+                "flarum/flags": "Allow users to flag posts for moderator review",
+                "flarum/likes": "Allow users to like posts",
+                "flarum/lock": "End a discussion and don't let anyone add further replies",
+                "flarum/mentions": "Mention and reply to specific posts and users",
+                "flarum/pusher": "See new discussions and posts in real-time using Pusher",
+                "flarum/sticky": "Pin discussions to the top of the list",
+                "flarum/subscriptions": "Allow users to follow discussions and receive notifications for new posts",
+                "flarum/tags": "Organize discussions into a hierarchy of tags and categories"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Dutch",
+                    "icon": {
+                        "image": "icon.svg",
+                        "backgroundColor": "#fff",
+                        "backgroundSize": "cover",
+                        "backgroundPosition": "center"
+                    }
+                },
+                "flarum-locale": {
+                    "code": "nl",
+                    "title": "Nederlands"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rody Molenaar",
+                    "email": "rody.molenaar@xtrada.nl",
+                    "homepage": "http://www.rodymol123.eu/"
+                }
+            ],
+            "description": "Dutch language pack.",
+            "homepage": "https://github.com/rodymol123/Flarum-nl-NL",
+            "keywords": [
+                "locale"
+            ],
+            "time": "2016-04-12 20:54:28"
+        },
+        {
             "name": "s9e/text-formatter",
             "version": "0.4.12",
             "source": {
@@ -4479,7 +4540,9 @@
     ],
     "aliases": [],
     "minimum-stability": "beta",
-    "stability-flags": [],
+    "stability-flags": {
+        "rodymol123/flarum-ext-dutch": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
